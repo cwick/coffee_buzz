@@ -28,10 +28,15 @@ module.exports = (grunt) ->
           syntaxtype: "coffee"
           extension: ".coffee"
 
+    connect:
+      server:
+        options: {}
 
   grunt.loadNpmTasks "grunt-contrib-yuidoc"
   grunt.loadNpmTasks "grunt-coffeelint"
   grunt.loadNpmTasks "grunt-contrib-requirejs"
+  grunt.loadNpmTasks "grunt-contrib-connect"
 
   grunt.registerTask "default", ["coffeelint", "requirejs", "yuidoc"]
+  grunt.registerTask "server", ["connect:server:keepalive"]
 

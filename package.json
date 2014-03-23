@@ -1,0 +1,10 @@
+{
+  "name": "hello-world",
+  "description": "A simple library that says 'hello'",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-yuidoc": "~0.5.2",
+    "grunt-coffeelint": "0.0.8"
+  }
+}

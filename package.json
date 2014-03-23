@@ -5,6 +5,7 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-yuidoc": "~0.5.2",
-    "grunt-coffeelint": "0.0.8"
+    "grunt-coffeelint": "0.0.8",
+    "grunt-contrib-requirejs": "~0.4.3"
   }
 }

@@ -11,5 +11,5 @@ Hello World is a Javascript library that says "hello". Its only use is to show o
 A full build of Hello World performs the following tasks:
 
 1. Checks the CoffeeScript code with [CoffeeLint](http://www.coffeelint.org/).
-1. Compiles the CoffeeScript, concatenates into one big file, and minimizes the file with [UglifyJS](https://github.com/mishoo/UglifyJS)
+1. Compiles the CoffeeScript, concatenates it into one big file with [r.js](http://requirejs.org/docs/optimization.html), and minimizes the file with [UglifyJS](https://github.com/mishoo/UglifyJS)
 1. Builds the [YUIDoc](http://yui.github.io/yuidoc/) documentation into the ```doc``` directory.

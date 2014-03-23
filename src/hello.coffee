@@ -1,5 +1,3 @@
-define ->\
-
 ###*
 # Contains the Hello World library.
 #
@@ -12,6 +10,8 @@ define ->\
 # @class MyClass
 # @constructor
 ###
+define ->\
+
 class HelloWorld
   sayHello: ->
     "Hello!"

@@ -8,7 +8,7 @@ module.exports = (grunt) ->
     requirejs:
       optimize:
         options:
-          name: "main",
+          name: "cs!main",
           exclude: ["coffee-script"]
           stubModules: ["cs"]
           out: "build/hello_world.js"

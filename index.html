@@ -2,7 +2,15 @@
 <html>
     <head>
         <title>My Sample Project</title>
-        <script data-main="cs!main" src="require.js"></script>
+        <script>
+          var require = {
+            paths: {
+              cs: "lib/cs",
+              "coffee-script": "lib/coffee-script"
+            }
+          };
+        </script>
+        <script data-main="cs!main" src="lib/require.js"></script>
     </head>
     <body>
         <h1>My Sample Project</h1>

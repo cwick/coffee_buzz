@@ -14,6 +14,6 @@ class StringPrinterFactory
   # Creates a new {{#crossLink "StringPrinter"}}{{/crossLink}}.
   #
   # @method createStringPrinter
-  # @return {StringPrinter} a new StringPrinter
+  # @return {StringPrinter} a new {{#crossLink "StringPrinter"}}{{/crossLink}}
   ###
   createStringPrinter: ->

@@ -13,12 +13,11 @@
 
   <script>
     require.config({
-      baseUrl: "/test",
+      baseUrl: "/",
       paths: {
         "cs": "../lib/cs",
         "coffee-script": "../lib/coffee-script",
-        "jasmine-boot": "lib/jasmine-2.0.0/boot",
-        "coffeebuzz/impl": "../src/impl"
+        "jasmine-boot": "lib/jasmine-2.0.0/boot"
       }
     });
 
@@ -26,7 +25,7 @@
       var jasmineBoot = window.onload;
       window.onload = function(){};
 
-      require(["cs!FizzBuzzTest"], function(){
+      require(["cs!test/FizzBuzzTest"], function(){
         jasmineBoot();
       });
     })();

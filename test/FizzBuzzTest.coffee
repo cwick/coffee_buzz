@@ -1,4 +1,4 @@
-define ["cs!coffeebuzz/impl/FizzBuzz"], (FizzBuzz) ->\
+define ["cs!src/impl/FizzBuzz"], (FizzBuzz) ->\
 
 describe "FizzBuzz integration test", ->
   fb = null

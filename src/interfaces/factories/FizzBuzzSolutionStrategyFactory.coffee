@@ -8,14 +8,14 @@
 #
 # @class FizzBuzzSolutionStrategyFactory
 ###
-define ->\
-class FizzBuzzSolutionStrategyFactory
-  ###*
-  # Creates a new {{#crossLink "FizzBuzzSolutionStrategyFactory"}}{{/crossLink}}.
-  #
-  # @method createFizzBuzzSolutionStrategy
-  # @return {FizzBuzzSolutionStrategyFactory} a new FizzBuzzSolutionStrategyFactory
-  ###
-  createFizzBuzzSolutionStrategy: ->
+define ->
+  class FizzBuzzSolutionStrategyFactory
+    ###*
+    # Creates a new {{#crossLink "FizzBuzzSolutionStrategyFactory"}}{{/crossLink}}.
+    #
+    # @method createFizzBuzzSolutionStrategy
+    # @return {FizzBuzzSolutionStrategyFactory} a new FizzBuzzSolutionStrategyFactory
+    ###
+    createFizzBuzzSolutionStrategy: ->
 
 

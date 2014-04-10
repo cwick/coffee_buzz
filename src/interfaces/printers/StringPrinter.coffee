@@ -8,7 +8,7 @@
 #
 # @class StringPrinter
 ###
-require ->\
+define ->\
 class StringPrinter
   ###*
   # Prints a string.

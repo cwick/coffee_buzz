@@ -8,7 +8,7 @@
 #
 # @class FizzBuzzSolutionStrategyFactory
 ###
-require ->\
+define ->\
 class FizzBuzzSolutionStrategyFactory
   ###*
   # Creates a new {{#crossLink "FizzBuzzSolutionStrategyFactory"}}{{/crossLink}}.

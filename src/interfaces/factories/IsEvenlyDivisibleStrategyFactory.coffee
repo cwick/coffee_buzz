@@ -8,7 +8,7 @@
 #
 # @class IsEvenlyDivisibleStrategyFactory
 ###
-require ->\
+define ->\
 class IsEvenlyDivisibleStrategyFactory
   ###*
   # Creates a new {{#crossLink "IsEvenlyDivisibleStrategy"}}{{/crossLink}}.

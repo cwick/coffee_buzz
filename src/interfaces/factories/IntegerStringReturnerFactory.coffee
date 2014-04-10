@@ -8,7 +8,7 @@
 #
 # @class IntegerStringReturnerFactory
 ###
-require ->\
+define ->\
 class IntegerStringReturnerFactory
   ###*
   # Creates a new {{#crossLink "IntegerStringReturner"}}{{/crossLink}}.

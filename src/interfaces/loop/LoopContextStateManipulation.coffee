@@ -8,7 +8,7 @@
 #
 # @class LoopContextStateManipulation
 ###
-require ->\
+define ->\
 class LoopContextStateManipulation
   ###*
   # Initializes the loop context with initial state data.

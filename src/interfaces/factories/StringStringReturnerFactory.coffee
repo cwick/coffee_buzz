@@ -8,7 +8,7 @@
 #
 # @class StringStringReturnerFactory
 ###
-require ->\
+define ->\
 class StringStringReturnerFactory
   ###*
   # Creates a new {{#crossLink "StringStringReturner"}}{{/crossLink}}.

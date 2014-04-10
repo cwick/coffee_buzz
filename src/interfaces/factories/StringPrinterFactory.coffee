@@ -8,7 +8,7 @@
 #
 # @class StringPrinterFactory
 ###
-require ->\
+define ->\
 class StringPrinterFactory
   ###*
   # Creates a new {{#crossLink "StringPrinter"}}{{/crossLink}}.

@@ -8,7 +8,7 @@
 #
 # @class IntegerPrinter
 ###
-require ->\
+define ->\
 class IntegerPrinter
   ###*
   # Prints an integer.

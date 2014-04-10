@@ -8,7 +8,7 @@
 #
 # @class IntegerPrinterFactory
 ###
-require ->\
+define ->\
 class IntegerPrinterFactory
   ###*
   # Creates a new {{#crossLink "IntegerPrinter"}}{{/crossLink}}.

@@ -1,3 +1,5 @@
+define ["cs!coffeebuzz/impl/FizzBuzz"], (FizzBuzz) ->\
+
 describe "FizzBuzz integration test", ->
   fb = null
   out = null

@@ -8,18 +8,23 @@ module.exports = (grunt) ->
     requirejs:
       optimize:
         options:
-          name: "cs!hello",
+          baseUrl: "src"
+          name: "../lib/almond"
+          include: ["cs!hello"]
           exclude: ["coffee-script"]
           stubModules: ["cs"]
           out: "build/hello.js"
-          baseUrl: "src"
+          wrap:
+            startFile: "src/intro.js"
+            endFile: "src/outro.js"
+
           paths:
             cs: "../lib/cs"
             "coffee-script": "../lib/coffee-script"
           # Uncomment to debug compiled file
           # optimize: "none"
 
-          #
+          # Strip "cs!" from all the module names
           onBuildWrite: (moduleName, path, contents) ->
             contents.replace /define\('cs!/g, "define('"
 

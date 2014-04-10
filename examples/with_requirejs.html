@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>With RequireJS</title>
+    <script src="../lib/require.js"></script>
+    <script>
+      require.config({
+        baseUrl: "/build"
+      });
+
+      require(["hello"], function(HelloWorld) {
+        console.log(new HelloWorld().sayHello());
+      });
+    </script>
+  </head>
+  <body>
+    <p>
+    This page demonstrates that Hello World can be used with RequireJS, using the module name <code>hello</code>.
+    </p>
+  </body>
+</html>
+

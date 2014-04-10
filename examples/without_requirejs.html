@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Without RequireJS</title>
+    <script src="../build/hello.js"></script>
+    <script>
+      console.log(new HelloWorld().sayHello());
+    </script>
+  </head>
+  <body>
+    <p>
+    This page demonstrates that Hello World can be used without RequireJS.
+    </p>
+    <p>
+    Hello World automatically detects that RequireJS is not being used and creates a global object called <code>Hello</code>.
+    </p>
+  </body>
+</html>
+

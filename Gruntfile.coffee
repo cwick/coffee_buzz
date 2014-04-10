@@ -8,16 +8,20 @@ module.exports = (grunt) ->
     requirejs:
       optimize:
         options:
-          name: "cs!src/hello",
+          name: "cs!hello",
           exclude: ["coffee-script"]
           stubModules: ["cs"]
           out: "build/hello.js"
-          baseUrl: "."
+          baseUrl: "src"
           paths:
-            cs: "lib/cs"
-            "coffee-script": "lib/coffee-script"
+            cs: "../lib/cs"
+            "coffee-script": "../lib/coffee-script"
           # Uncomment to debug compiled file
           # optimize: "none"
+
+          #
+          onBuildWrite: (moduleName, path, contents) ->
+            contents.replace /define\('cs!/g, "define('"
 
     yuidoc:
       compile:

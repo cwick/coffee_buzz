@@ -5,6 +5,7 @@
 
 define (require) ->
   FizzBuzzSolutionStrategyFactory = require "cs!../../interfaces/factories/FizzBuzzSolutionStrategyFactory"
+  EnterpriseGradeFizzBuzzSolutionStrategy = require "cs!../strategies/EnterpriseGradeFizzBuzzSolutionStrategy"
 
   ###*
   # A concrete implementation of {{#crossLink "FizzBuzzSolutionStrategyFactory"}}{{/crossLink}} that returns an Enterprise-grade solution strategy.
@@ -15,5 +16,6 @@ define (require) ->
   ###
   class EnterpriseGradeFizzBuzzSolutionStrategyFactory extends FizzBuzzSolutionStrategyFactory
     createFizzBuzzSolutionStrategy: ->
+      new EnterpriseGradeFizzBuzzSolutionStrategy()
 
 

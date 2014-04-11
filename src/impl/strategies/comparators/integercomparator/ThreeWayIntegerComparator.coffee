@@ -4,7 +4,7 @@
 ###
 
 define (require) ->
-  ThreeWayIntegerComparator = require "cs!./ThreeWayIntegerComparisonResult"
+  ThreeWayIntegerComparisonResult = require "cs!./ThreeWayIntegerComparisonResult"
 
   ###*
   # Compares two integers.

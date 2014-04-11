@@ -17,9 +17,22 @@ define (require) ->
   class LoopContext
     constructor: (nLoopControlParameterFinalValue) ->
       myLoopComponentFactory = new LoopComponentFactory()
-      myLoopInitializer = myLoopComponentFactory.createLoopInitializer()
-      myLoopFinalizer = myLoopComponentFactory.createLoopFinalizer(nLoopControlParameterFinalValue)
-      myLoopCondition = myLoopComponentFactory.createLoopCondition()
-      myLoopStep = myLoopComponentFactory.createLoopStep()
+      @myLoopInitializer = myLoopComponentFactory.createLoopInitializer()
+      @myLoopFinalizer = myLoopComponentFactory.createLoopFinalizer(nLoopControlParameterFinalValue)
+      @myLoopCondition = myLoopComponentFactory.createLoopCondition()
+      @myLoopStep = myLoopComponentFactory.createLoopStep()
 
+    start: ->
+      @myCurrentControlParameterValue = @myLoopInitializer.getLoopInitializationPoint()
+
+    shouldProceed: ->
+      @myLoopCondition.evaluateLoop(@myCurrentControlParameterValue,
+        @myLoopFinalizer.getLoopFinalizationPoint())
+
+    proceed: ->
+      @myCurrentControlParameterValue =
+        @myLoopStep.stepLoop(@myCurrentControlParameterValue)
+
+    getControlParameter: ->
+      @myCurrentControlParameterValue
 

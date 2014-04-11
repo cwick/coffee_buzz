@@ -5,9 +5,19 @@
 
 define (require) ->
   ###*
-  # What the fuck does this class do?
+  # Generates output for the current loop step.
   #
   # @class SingleStepOutputGenerationStrategy
   # @constructor
   ###
   class SingleStepOutputGenerationStrategy
+    constructor: ->
+
+    ###*
+    # Generates output for the current loop step.
+    #
+    # @method performGenerationForCurrentStep
+    # @param {SingleStepOutputGenerationParameter} generationParameter the parameter representing the current loop step
+    ###
+    performGenerationForCurrentStep: (generationParameter) ->
+

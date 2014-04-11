@@ -6,9 +6,11 @@
 define (require) ->
   LoopPayloadExecution = require "cs!../../interfaces/loop/LoopPayloadExecution"
   SingleStepOutputGenerationStrategy = require "cs!./SingleStepOutputGenerationStrategy"
+  LoopContextStateRetrievalToSingleStepOutputGenerationAdapter =
+    require "cs!./adapters/LoopContextStateRetrievalToSingleStepOutputGenerationAdapter"
 
   ###*
-  # What the fuck does this class do?
+  # Implements a single-step loop payload.
   #
   # @class SingleStepPayload
   # @constructor

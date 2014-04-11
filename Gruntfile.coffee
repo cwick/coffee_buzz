@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON("package.json")
 
     coffeelint:
-      lint: ["src/*.coffee"]
+      lint: ["src/**/*.coffee"]
 
     requirejs:
       optimize:

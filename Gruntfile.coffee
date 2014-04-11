@@ -4,6 +4,9 @@ module.exports = (grunt) ->
 
     coffeelint:
       lint: ["src/**/*.coffee"]
+      options:
+        max_line_length:
+          value: 110
 
     requirejs:
       optimize:

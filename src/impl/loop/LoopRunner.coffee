@@ -16,7 +16,6 @@ define (require) ->
   class LoopRunner
     constructor: (@stateManipulation, @stateRetrieval, @payload) ->
 
-
     ###*
     # Orchestrates loop execution.
     #

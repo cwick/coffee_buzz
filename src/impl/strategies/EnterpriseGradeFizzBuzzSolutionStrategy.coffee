@@ -6,6 +6,7 @@
 define (require) ->
   FizzBuzzSolutionStrategy = require "cs!../../interfaces/strategies/FizzBuzzSolutionStrategy"
   LoopContext = require "cs!../loop/LoopContext"
+  LoopRunner = require "cs!../loop/LoopRunner"
   SingleStepPayload = require "cs!./SingleStepPayload"
 
   ###*

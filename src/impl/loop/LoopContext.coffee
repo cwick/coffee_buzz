@@ -3,7 +3,9 @@
 # @submodule coffeebuzz.impl.loop
 ###
 
-define ->
+define (require) ->
+  LoopComponentFactory = require "cs!../factories/LoopComponentFactory"
+
   ###*
   # A concrete loop context.
   #
@@ -13,5 +15,11 @@ define ->
   # @uses LoopContextStateRetrieval
   ###
   class LoopContext
+    constructor: (nLoopControlParameterFinalValue) ->
+      myLoopComponentFactory = new LoopComponentFactory()
+      myLoopInitializer = myLoopComponentFactory.createLoopInitializer()
+      myLoopFinalizer = myLoopComponentFactory.createLoopFinalizer(nLoopControlParameterFinalValue)
+      myLoopCondition = myLoopComponentFactory.createLoopCondition()
+      myLoopStep = myLoopComponentFactory.createLoopStep()
 
 

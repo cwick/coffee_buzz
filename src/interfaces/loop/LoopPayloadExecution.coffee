@@ -3,19 +3,19 @@
 # @submodule coffeebuzz.interfaces.loop
 ###
 
-###*
-# An interface for executing a loop payload.
-#
-# @class LoopPayloadExecution
-###
-define ->\
-class LoopPayloadExecution
+define ->
   ###*
-  # Gets the value of the loop context control parameter
+  # An interface for executing a loop payload.
   #
-  # @method runLoopPayload
-  # @param {LoopContextStateRetrieval} stateRetrieval a LoopContextStateRetrieval interface used to retreive current loop context state
+  # @class LoopPayloadExecution
   ###
-  runLoopPayload: (stateRetrieval) ->
+  class LoopPayloadExecution
+    ###*
+    # Executes the loop payload.
+    #
+    # @method runLoopPayload
+    # @param {LoopContextStateRetrieval} stateRetrieval a LoopContextStateRetrieval interface used to retreive current loop context state
+    ###
+    runLoopPayload: (stateRetrieval) ->
 
 

@@ -6,6 +6,7 @@
 define (require) ->
   FizzBuzzSolutionStrategy = require "cs!../../interfaces/strategies/FizzBuzzSolutionStrategy"
   LoopContext = require "cs!../loop/LoopContext"
+  SingleStepPayload = require "cs!./SingleStepPayload"
 
   ###*
   # An Enterprise-grade implementation of {{#crossLink "FizzBuzzSolutionStrategy"}}{{/crossLink}}.

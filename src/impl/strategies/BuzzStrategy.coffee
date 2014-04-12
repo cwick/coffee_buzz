@@ -7,7 +7,7 @@ define (require) ->
   IsEvenlyDivisibleStrategy = require "cs!../../interfaces/strategies/IsEvenlyDivisibleStrategy"
 
   ###*
-  # A strategy that tests and integer for Buzz
+  # A strategy that tests an integer for Buzz
   #
   # @class BuzzStrategy
   # @constructor

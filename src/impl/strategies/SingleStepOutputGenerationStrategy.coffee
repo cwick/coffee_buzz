@@ -6,6 +6,7 @@
 define (require) ->
   FizzStrategyFactory = require "cs!../factories/FizzStrategyFactory"
   BuzzStrategyFactory = require "cs!../factories/BuzzStrategyFactory"
+  NoFizzNoBuzzStrategyFactory = require "cs!../factories/NoFizzNoBuzzStrategyFactory"
   FizzStringPrinterFactory = require "cs!../factories/FizzStringPrinterFactory"
   BuzzStringPrinterFactory = require "cs!../factories/BuzzStringPrinterFactory"
 

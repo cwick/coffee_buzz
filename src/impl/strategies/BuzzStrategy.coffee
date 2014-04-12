@@ -7,14 +7,14 @@ define (require) ->
   IsEvenlyDivisibleStrategy = require "cs!../../interfaces/strategies/IsEvenlyDivisibleStrategy"
 
   ###*
-  # A strategy that tests an integer for Fizz
+  # A strategy that tests and integer for Buzz
   #
-  # @class FizzStrategy
+  # @class BuzzStrategy
   # @constructor
   ###
-  class FizzStrategy extends IsEvenlyDivisibleStrategy
+  class BuzzStrategy extends IsEvenlyDivisibleStrategy
     isEvenlyDivisible: (theInteger) ->
-      if NumberIsMultipleOfAnotherNumberVerifier.numberIsMultipleOfAnotherNumber(theInteger, FizzStrategyConstants.FIZZ_INTEGER_CONSTANT_VALUE)
+      if NumberIsMultipleOfAnotherNumberVerifier.numberIsMultipleOfAnotherNumber(theInteger, BuzzStrategyConstants.BUZZ_INTEGER_CONSTANT_VALUE)
         true
       else
         false

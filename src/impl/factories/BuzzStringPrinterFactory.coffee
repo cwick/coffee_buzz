@@ -10,6 +10,8 @@
 # @constructor
 # @extends StringPrinterFactory
 ###
-require ["cofeebuzz.interfaces.factories.StringPrinterFactory"], ->\
-class BuzzStringPrinterFactory extends StringPrinterFactory
+define (require) ->
+  StringPrinterFactory = require "cs!../../interfaces/factories/StringPrinterFactory"
+
+  class BuzzStringPrinterFactory extends StringPrinterFactory
 

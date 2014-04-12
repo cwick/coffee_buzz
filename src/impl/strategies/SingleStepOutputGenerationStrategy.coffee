@@ -5,6 +5,9 @@
 
 define (require) ->
   FizzStrategyFactory = require "cs!../factories/FizzStrategyFactory"
+  BuzzStrategyFactory = require "cs!../factories/BuzzStrategyFactory"
+  FizzStringPrinterFactory = require "cs!../factories/FizzStringPrinterFactory"
+  BuzzStringPrinterFactory = require "cs!../factories/BuzzStringPrinterFactory"
 
   ###*
   # Generates output for the current loop step.

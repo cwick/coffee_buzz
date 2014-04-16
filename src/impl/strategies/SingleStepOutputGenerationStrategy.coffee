@@ -9,6 +9,8 @@ define (require) ->
   NoFizzNoBuzzStrategyFactory = require "cs!../factories/NoFizzNoBuzzStrategyFactory"
   FizzStringPrinterFactory = require "cs!../factories/FizzStringPrinterFactory"
   BuzzStringPrinterFactory = require "cs!../factories/BuzzStringPrinterFactory"
+  IntIntegerPrinterFactory = require "cs!../factories/IntIntegerPrinterFactory"
+  NewLineStringPrinterFactory = require "cs!../factories/NewLineStringPrinterFactory"
 
   ###*
   # Generates output for the current loop step.
@@ -31,7 +33,7 @@ define (require) ->
       myNoFizzNoBuzzStrategyFactory = new NoFizzNoBuzzStrategyFactory()
       @myNoFizzNoBuzzStrategy = myNoFizzNoBuzzStrategyFactory.createIsEvenlyDivisibleStrategy()
       myIntIntegerPrinterFactory = new IntIntegerPrinterFactory()
-      @myIntIntegerPrinter = myIntIntegerPrinterFactory.createPrinter()
+      @myIntIntegerPrinter = myIntIntegerPrinterFactory.createIntegerPrinter()
 
       myNewLineStringPrinterFactory = new NewLineStringPrinterFactory()
       @myNewLinePrinter = myNewLineStringPrinterFactory.createStringPrinter()

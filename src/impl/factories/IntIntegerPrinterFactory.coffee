@@ -7,5 +7,7 @@
 # @class IntIntegerPrinterFactory
 # @extends IntegerPrinterFactory
 ###
-require ["cofeebuzz-interfaces/IntegerPrinterFactory"], ->\
-class IntIntegerPrinterFactory extends IntegerPrinterFactory
+define (require) ->
+  IntegerPrinterFactory = require "cs!../../interfaces/factories/IntegerPrinterFactory"
+
+  class IntIntegerPrinterFactory extends IntegerPrinterFactory

@@ -20,7 +20,7 @@ CoffeeBuzz comes with all the features you would expect in enterprise-level, bat
 
 ## Running
 
-A sample application is included that demonstrates using CoffeeBuzz. To run the app, type `grunt server`, then point your browser to `http://localhost:8000`. 
+A sample application is included that demonstrates using CoffeeBuzz. To run the app, type `grunt server`, then point your browser to `http://localhost:8000`.
 
 To view the auto-generated documentation, go to `http://localhost:8000/doc`
 

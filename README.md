@@ -1,26 +1,39 @@
-# Hello World
+# CoffeeBuzz
 
-Hello World is a Javascript library that says "hello". Its only use is to show off a typical automated build process that a Javascript library might use.
+CoffeeBuzz is a serious, enterprise-quality software library that implements the [FizzBuzz counting algorithm](http://en.wikipedia.org/wiki/Fizz_buzz)
 
-## Installing
+Inspired by [FizzBuzzEnterpriseEdition](https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition), and feeling that many Javascript libraries were not up to the high standards of serious business enterprise companies, I created CoffeeBuzz to set a new standard in software quality on the web. Not only is CoffeeBuzz a direct port of the original FizzBuzzEnterpriseEdition, it also teaches you how to set up an automated build pipeline for developing Javascript/CoffeeScript libraries.
+
+CoffeeBuzz comes with all the features you would expect in enterprise-level, battle-hardened software, including:
+
+* Fully-automated build pipeline that compiles code and compresses into one Javascript file
+* Automatically generated API documentation
+* Automatic code quality checks
+* Unit and integration tests
+* During development, all CoffeeScript code is compiled on-the-fly, in the browser, and includes source maps so stack traces and error messages reference the original `.coffee` file.
+
+## Building
 
 1. Install [node.js](http://nodejs.org/)
-1. Install Hello World's dependencies into the local directory: ```npm install```
+1. Install CoffeeBuzz dependencies into the local directory: ```npm install```
 1. Run Grunt: ```grunt```
-
-A full build of Hello World performs the following tasks:
-
-1. Checks the CoffeeScript code with [CoffeeLint](http://www.coffeelint.org/).
-1. Compiles the CoffeeScript, concatenates it into one big file with [r.js](http://requirejs.org/docs/optimization.html), and minimizes the file with [UglifyJS](https://github.com/mishoo/UglifyJS)
-1. Builds the [YUIDoc](http://yui.github.io/yuidoc/) documentation into the ```doc``` directory.
 
 ## Running
 
-A sample application is included that makes use of the Hello World library. To run the app, type `grunt server`, then point your browser to `http://localhost:8000`. To view the auto-generated documentation, go to `http://localhost:8000/doc`
+A sample application is included that demonstrates using CoffeeBuzz. To run the app, type `grunt server`, then point your browser to `http://localhost:8000`.
 
-## Developing
+To view the auto-generated documentation, go to `http://localhost:8000/doc`
 
-The build system has some nice features that make developing HelloWorld really easy:
+To run the unit tests, go to `http://localhost:8000/spec`
 
-1. During development, all CoffeeScript files are compiled on-the-fly in the browser. All compiler errors will show up in the development console.
-2. Source maps are automatically generated, so errors and stack traces will reference the original `.coffee` files.
+## Tools Used
+
+CoffeeBuzz uses the following third-party tools and libraries:
+
+* [CoffeeScript](http://coffeescript.org/)
+* [Grunt](http://gruntjs.com/)
+* [RequireJS](http://requirejs.org/)
+* [r.js](http://requirejs.org/docs/optimization.html)
+* [CoffeeScript plugin for RequireJS](https://github.com/requirejs/require-cs)
+* [Jasmine](http://jasmine.github.io/)
+* [YUIDoc](http://yui.github.io/yuidoc/)

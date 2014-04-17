@@ -5,6 +5,8 @@
 
 define (require) ->
   IsEvenlyDivisibleStrategy = require "cs!../../interfaces/strategies/IsEvenlyDivisibleStrategy"
+  NumberIsMultipleOfAnotherNumberVerifier = require "cs!../math/arithmetics/NumberIsMultipleOfAnotherNumberVerifier"
+  BuzzStrategyConstants = require "cs!./constants/BuzzStrategyConstants"
 
   ###*
   # A strategy that tests an integer for Buzz

@@ -35,5 +35,6 @@ CoffeeBuzz uses the following third-party tools and libraries:
 * [RequireJS](http://requirejs.org/)
 * [r.js](http://requirejs.org/docs/optimization.html)
 * [CoffeeScript plugin for RequireJS](https://github.com/requirejs/require-cs)
+* [Almond](https://github.com/jrburke/almond)
 * [Jasmine](http://jasmine.github.io/)
 * [YUIDoc](http://yui.github.io/yuidoc/)

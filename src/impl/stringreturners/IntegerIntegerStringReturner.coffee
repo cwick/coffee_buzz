@@ -1,9 +1,9 @@
 ###*
 # @module coffeebuzz.impl
-# @submodule coffeebuzz.impl.string_returners
+# @submodule coffeebuzz.impl.stringreturners
 ###
 define (require) ->
-  IntegerStringReturner = require "cs!../../interfaces/string_returners/IntegerStringReturner"
+  IntegerStringReturner = require "cs!../../interfaces/stringreturners/IntegerStringReturner"
 
   ###*
   # @class IntegerIntegerStringReturner

@@ -4,7 +4,7 @@
 ###
 define (require) ->
   IntegerStringReturnerFactory = require "cs!../../interfaces/factories/IntegerStringReturnerFactory"
-  IntegerIntegerStringReturner = require "cs!../string_returners/IntegerIntegerStringReturner"
+  IntegerIntegerStringReturner = require "cs!../stringreturners/IntegerIntegerStringReturner"
 
   ###*
   # A concrete implementation of IntegerStringReturnerFactory.

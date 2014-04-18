@@ -1,21 +1,20 @@
 ###*
-# @module coffeebuzz.interfaces
+# @module coffeebuzz.impl
 # @submodule coffeebuzz.interfaces.stringreturners
 ###
-
-###*
-# An interface that returns a String representation of an integer.
-#
-# @class IntegerStringReturner
-###
-define ->\
-class IntegerStringReturner
+define (require) ->
   ###*
-  # Converts a number to a String.
+  # An interface for returning a string representation of an integer.
   #
-  # @method getIntegerReturnString
-  # @param {Number} theInteger the integer to convert to a String.
-  # @return {String} the result of converting the given number to a String.
+  # @class IntegerStringReturner
   ###
-  getIntegerReturnString: ->
+  class IntegerStringReturner
+    ###*
+    # Returns a string representation of an integer
+    #
+    # @method getIntegerReturnString
+    # @param {Number} theInteger the integer to convert to a string.
+    ###
+    getIntegerReturnString: (theInteger) ->
+
 

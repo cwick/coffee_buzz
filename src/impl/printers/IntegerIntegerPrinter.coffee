@@ -5,6 +5,7 @@
 define (require) ->
   IntegerPrinter = require "cs!../../interfaces/printers/IntegerPrinter"
   IntegerIntegerStringReturnerFactory = require "cs!../factories/IntegerIntegerStringReturnerFactory"
+  SystemOutFizzBuzzOutputStrategyFactory = require "cs!../factories/SystemOutFizzBuzzOutputStrategyFactory"
 
   ###*
   # A concrete implementation of IntegerPrinterFactory
@@ -13,6 +14,10 @@ define (require) ->
   # @extends IntegerPrinter
   ###
   class IntegerIntegerPrinter extends IntegerPrinter
+    constructor: ->
+      factory = new SystemOutFizzBuzzOutputStrategyFactory()
+      @outputStrategy = factory.createOutputStrategy()
+
     printInteger: (theInteger) ->
       myIntegerIntegerStringReturnerFactory = new IntegerIntegerStringReturnerFactory()
       myIntegerStringReturner = myIntegerIntegerStringReturnerFactory.createIntegerStringReturner()

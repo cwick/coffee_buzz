@@ -6,6 +6,7 @@
 define (require) ->
   StringPrinter = require "cs!../../interfaces/printers/StringPrinter"
   SystemOutFizzBuzzOutputStrategyFactory = require "cs!../factories/SystemOutFizzBuzzOutputStrategyFactory"
+  BuzzStringReturnerFactory = require "cs!../factories/BuzzStringReturnerFactory"
 
   ###*
   # A concrete implementation of {{#crossLink "StringPrinter"}}{{/crossLink}} that prints the string "Buzz".

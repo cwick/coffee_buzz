@@ -13,5 +13,5 @@ define (require) ->
   # @extends IntegerPrinterFactory
   ###
   class IntIntegerPrinterFactory extends IntegerPrinterFactory
-    createPrinter: ->
+    createIntegerPrinter: ->
       new IntegerIntegerPrinter()

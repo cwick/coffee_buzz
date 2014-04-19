@@ -24,7 +24,7 @@ module.exports = (grunt) ->
             cs: "../lib/cs"
             "coffee-script": "../lib/coffee-script"
           # Uncomment to debug compiled file
-          optimize: "none"
+          # optimize: "none"
 
           # Strip "cs!" from module names
           onBuildWrite: (moduleName, path, contents) ->

@@ -2,17 +2,19 @@
 <html>
   <head>
     <title>Without RequireJS</title>
-    <script src="../build/hello.js"></script>
+    <script src="../build/FizzBuzz.js"></script>
+
     <script>
-      console.log(new HelloWorld().sayHello());
+      // CoffeeBuzz automatically detects that RequireJS is not being used
+      // and creates a global object called FizzBuzz.
+      new FizzBuzz().fizzbuzz(100);
     </script>
   </head>
   <body>
     <p>
-    This page demonstrates that Hello World can be used without RequireJS.
+    This page demonstrates how CoffeeBuzz can be used with RequireJS. View page source for details. Check the console output for proof that everything works.
     </p>
     <p>
-    Hello World automatically detects that RequireJS is not being used and creates a global object called <code>HelloWorld</code>.
     </p>
   </body>
 </html>

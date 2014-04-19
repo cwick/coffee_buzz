@@ -8,14 +8,14 @@
         baseUrl: "/build"
       });
 
-      require(["hello"], function(HelloWorld) {
-        console.log(new HelloWorld().sayHello());
+      require(["FizzBuzz"], function(FizzBuzz) {
+        new FizzBuzz().fizzbuzz(100);
       });
     </script>
   </head>
   <body>
     <p>
-    This page demonstrates that Hello World can be used with RequireJS, using the module name <code>hello</code>.
+    This page demonstrates how CoffeeBuzz can be used with RequireJS. View page source for details. Check the console output for proof that everything works.
     </p>
   </body>
 </html>

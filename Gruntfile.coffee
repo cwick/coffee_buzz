@@ -14,9 +14,8 @@ module.exports = (grunt) ->
           baseUrl: "src"
           name: "../lib/almond"
           include: ["cs!impl/FizzBuzz"]
-          exclude: ["coffee-script"]
-          stubModules: ["cs"]
-          out: "build/coffee_buzz.js"
+          exclude: ["coffee-script", "cs"]
+          out: "build/FizzBuzz.js"
           wrap:
             startFile: "src/intro.js"
             endFile: "src/outro.js"
@@ -25,11 +24,13 @@ module.exports = (grunt) ->
             cs: "../lib/cs"
             "coffee-script": "../lib/coffee-script"
           # Uncomment to debug compiled file
-          # optimize: "none"
+          optimize: "none"
 
-          # Strip "cs!" from the main module
+          # Strip "cs!" from module names
           onBuildWrite: (moduleName, path, contents) ->
-            contents.replace /define\('cs!impl\/FizzBuzz/g, "define('impl/FizzBuzz"
+            contents.replace(/define\('cs!/g, "define('")
+                    .replace(/'cs!/g, "'")
+                    .replace(/require\("cs!/g, "require(\"")
 
     yuidoc:
       compile:

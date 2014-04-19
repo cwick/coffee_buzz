@@ -4,7 +4,8 @@
 ###
 
 ###*
-# An interface to a factory that creates {{#crossLink "FizzBuzzSolutionStrategyFactory"}}{{/crossLink}} objects.
+# An interface to a factory that creates
+# {{#crossLink "FizzBuzzSolutionStrategyFactory"}}{{/crossLink}} objects.
 #
 # @class FizzBuzzSolutionStrategyFactory
 ###

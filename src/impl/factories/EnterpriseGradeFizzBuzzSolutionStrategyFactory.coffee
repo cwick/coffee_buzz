@@ -8,7 +8,8 @@ define (require) ->
   EnterpriseGradeFizzBuzzSolutionStrategy = require "cs!../strategies/EnterpriseGradeFizzBuzzSolutionStrategy"
 
   ###*
-  # A concrete implementation of {{#crossLink "FizzBuzzSolutionStrategyFactory"}}{{/crossLink}} that returns an Enterprise-grade solution strategy.
+  # A concrete implementation of {{#crossLink "FizzBuzzSolutionStrategyFactory"}}{{/crossLink}}
+  # that returns an Enterprise-grade solution strategy.
   #
   # @class EnterpriseGradeFizzBuzzSolutionStrategyFactory
   # @constructor

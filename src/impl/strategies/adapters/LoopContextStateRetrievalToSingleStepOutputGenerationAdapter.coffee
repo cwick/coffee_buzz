@@ -4,17 +4,15 @@
 ###
 
 define (require) ->
-  SingleStepOutputGenerationParameterStrategy =
-    require "cs!../../../interfaces/strategies/SingleStepOutputGenerationParameterStrategy"
-
   ###*
   # @class LoopContextStateRetrievalToSingleStepOutputGenerationAdapter
   # @constructor
   # @extends SingleStepOutputGenerationParameter
   ###
-  class LoopContextStateRetrievalToSingleStepOutputGenerationAdapter extends SingleStepOutputGenerationParameterStrategy
+  class LoopContextStateRetrievalToSingleStepOutputGenerationAdapter
     constructor: (@retrievalToAdapt) ->
 
     retrieveIntegerValue: ->
       @retrievalToAdapt.getControlParameter()
+
 

@@ -5,7 +5,8 @@
 
 define (require) ->
   IsEvenlyDivisibleStrategy = require "cs!../../interfaces/strategies/IsEvenlyDivisibleStrategy"
-  NumberIsMultipleOfAnotherNumberVerifier = require "cs!../math/arithmetics/NumberIsMultipleOfAnotherNumberVerifier"
+  NumberIsMultipleOfAnotherNumberVerifier =
+    require "cs!../math/arithmetics/NumberIsMultipleOfAnotherNumberVerifier"
   BuzzStrategyConstants = require "cs!./constants/BuzzStrategyConstants"
 
   ###*
@@ -16,7 +17,8 @@ define (require) ->
   ###
   class BuzzStrategy extends IsEvenlyDivisibleStrategy
     isEvenlyDivisible: (theInteger) ->
-      if NumberIsMultipleOfAnotherNumberVerifier.numberIsMultipleOfAnotherNumber(theInteger, BuzzStrategyConstants.BUZZ_INTEGER_CONSTANT_VALUE)
+      if NumberIsMultipleOfAnotherNumberVerifier.numberIsMultipleOfAnotherNumber(
+        theInteger, BuzzStrategyConstants.BUZZ_INTEGER_CONSTANT_VALUE)
         true
       else
         false

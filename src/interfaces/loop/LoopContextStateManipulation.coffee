@@ -21,7 +21,8 @@ class LoopContextStateManipulation
   # Tests the internal loop context state for a terminating condition.
   #
   # @method shouldProceed
-  # @return {boolean} true if the loop context state has reached a terminating condition, or false if the loop context state is still able to proceed.
+  # @return {boolean} true if the loop context state has reached a
+  # terminating condition, or false if the loop context state is still able to proceed.
   ###
   shouldProceed: ->
 

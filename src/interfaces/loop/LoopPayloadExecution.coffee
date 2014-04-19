@@ -14,7 +14,8 @@ define ->
     # Executes the loop payload.
     #
     # @method runLoopPayload
-    # @param {LoopContextStateRetrieval} stateRetrieval a LoopContextStateRetrieval interface used to retreive current loop context state
+    # @param {LoopContextStateRetrieval} stateRetrieval a LoopContextStateRetrieval
+    # interface used to retreive current loop context state
     ###
     runLoopPayload: (stateRetrieval) ->
 

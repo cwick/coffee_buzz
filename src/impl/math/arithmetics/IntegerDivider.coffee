@@ -4,9 +4,12 @@
 ###
 
 define (require) ->
-  IntegerForEqualityComparator = require "cs!../../strategies/comparators/integercomparator/IntegerForEqualityComparator"
-  ThreeWayIntegerComparator = require "cs!../../strategies/comparators/integercomparator/ThreeWayIntegerComparator"
-  ThreeWayIntegerComparisonResult = require "cs!../../strategies/comparators/integercomparator/ThreeWayIntegerComparisonResult"
+  IntegerForEqualityComparator =
+    require "cs!../../strategies/comparators/integercomparator/IntegerForEqualityComparator"
+  ThreeWayIntegerComparator =
+    require "cs!../../strategies/comparators/integercomparator/ThreeWayIntegerComparator"
+  ThreeWayIntegerComparisonResult =
+    require "cs!../../strategies/comparators/integercomparator/ThreeWayIntegerComparisonResult"
 
   ###*
   # Divides one integer by another.

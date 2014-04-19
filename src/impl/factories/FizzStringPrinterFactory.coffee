@@ -8,7 +8,8 @@ define (require) ->
   FizzStringPrinter = require "cs!../printers/FizzStringPrinter"
 
   ###*
-  # A concrete implementation of {{#crossLink "StringPrinterFactory"}}{{/crossLink}} that returns {{#crossLink "FizzStringPrinter"}}{{/crossLink}} objects.
+  # A concrete implementation of {{#crossLink "StringPrinterFactory"}}{{/crossLink}} that
+  # returns {{#crossLink "FizzStringPrinter"}}{{/crossLink}} objects.
   #
   # @class FizzStringPrinterFactory
   # @constructor

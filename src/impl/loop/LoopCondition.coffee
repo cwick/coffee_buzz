@@ -4,8 +4,10 @@
 ###
 
 define (require) ->
-  ThreeWayIntegerComparator = require "cs!../strategies/comparators/integercomparator/ThreeWayIntegerComparator"
-  ThreeWayIntegerComparisonResult = require "cs!../strategies/comparators/integercomparator/ThreeWayIntegerComparisonResult"
+  ThreeWayIntegerComparator =
+    require "cs!../strategies/comparators/integercomparator/ThreeWayIntegerComparator"
+  ThreeWayIntegerComparisonResult =
+    require "cs!../strategies/comparators/integercomparator/ThreeWayIntegerComparisonResult"
 
   ###*
   # A loop termination condition.

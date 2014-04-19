@@ -5,7 +5,8 @@
 
 define (require) ->
   IntegerDivider = require "cs!./IntegerDivider"
-  IntegerForEqualityComparator = require "cs!../../strategies/comparators/integercomparator/IntegerForEqualityComparator"
+  IntegerForEqualityComparator =
+    require "cs!../../strategies/comparators/integercomparator/IntegerForEqualityComparator"
 
   ###*
   # Determines if one number is a multiple of another number.
@@ -28,7 +29,8 @@ define (require) ->
         nMultiplyDivisionResultBySecondIntegerResult =
           nDivideFirstIntegerBySecondIntegerResult * nSecondNumber
 
-        if IntegerForEqualityComparator.areTwoIntegersEqual(nMultiplyDivisionResultBySecondIntegerResult, nFirstNumber)
+        if IntegerForEqualityComparator.areTwoIntegersEqual(
+          nMultiplyDivisionResultBySecondIntegerResult, nFirstNumber)
           true
         else
           false

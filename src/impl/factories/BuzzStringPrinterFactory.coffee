@@ -8,7 +8,8 @@ define (require) ->
   BuzzStringPrinter = require "cs!../printers/BuzzStringPrinter"
 
   ###*
-  # A concrete implementation of {{#crossLink "StringPrinterFactory"}}{{/crossLink}} that returns {{#crossLink "BuzzStringPrinter"}}{{/crossLink}} objects.
+  # A concrete implementation of {{#crossLink "StringPrinterFactory"}}{{/crossLink}} that
+  # returns {{#crossLink "BuzzStringPrinter"}}{{/crossLink}} objects.
   #
   # @class BuzzStringPrinterFactory
   # @constructor

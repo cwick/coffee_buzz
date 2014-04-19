@@ -8,7 +8,7 @@
   } else {
     //We don't have an AMD library, so just assign to a
     //global variable.
-    root.HelloWorld = factory();
+    root.FizzBuzz = factory();
   }
 }(this, function () {
     //almond, and your modules will be inlined here
